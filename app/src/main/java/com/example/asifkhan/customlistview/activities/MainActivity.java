@@ -22,18 +22,18 @@ public class MainActivity extends AppCompatActivity {
     private CustomListAdapter customListAdapter;
     private ListView customListView;
     private String[] names={
-            "Asif Khan","Tanvir Ahmed","Nafis Iqbal","Rahim Islam","Abir Hasan",
-            "Asif Khan","Tanvir Ahmed","Nafis Iqbal","Rahim Islam","Abir Hasan",
-            "Asif Khan","Tanvir Ahmed","Nafis Iqbal","Rahim Islam","Abir Hasan",
-            "Asif Khan","Tanvir Ahmed","Nafis Iqbal","Rahim Islam","Abir Hasan",
-            "Asif Khan","Tanvir Ahmed","Nafis Iqbal","Rahim Islam","Abir Hasan"
+            "Course 1","Course 2","Course 3","Course 4","Course 5",
+            "Course 1","Course 2","Course 3","Course 4","Course 5",
+            "Course 1","Course 2","Course 3","Course 4","Course 5",
+            "Course 1","Course 2","Course 3","Course 4","Course 5",
+            "Course 1","Course 2","Course 3","Course 4","Course 5"
     };
     private String[] professions={
-            "Android Developer","Web Developer","Python Programmer","iOS Programmer","Data Analyst",
-            "Android Developer","Web Developer","Python Programmer","iOS Programmer","Data Analyst",
-            "Android Developer","Web Developer","Python Programmer","iOS Programmer","Data Analyst",
-            "Android Developer","Web Developer","Python Programmer","iOS Programmer","Data Analyst",
-            "Android Developer","Web Developer","Python Programmer","iOS Programmer","Data Analyst"
+            "Android Developement","Web Developement","Python Programming","Ethical Hacking","Data Science",
+            "Android Developement","Web Developement","Python Programming","Ethical Hacking","Data Science",
+            "Android Developement","Web Developement","Python Programming","Ethical Hacking","Data Science",
+            "Android Developement","Web Developement","Python Programming","Ethical Hacking","Data Science",
+            "Android Developement","Web Developement","Python Programming","Ethical Hacking","Data Science"
     };
     private int[] photos={
             R.drawable.sample_5,R.drawable.sample_1,R.drawable.sample_6,R.drawable.sample_5,R.drawable.sample_5,
@@ -89,6 +89,9 @@ public class MainActivity extends AppCompatActivity {
                     if(name.contains(newText) || profession.contains(newText)){
                         newUserInfos.add(userInfo);
                     }
+
+
+
                 }
                 customListAdapter.filterResult(newUserInfos);
                 customListAdapter.notifyDataSetChanged();
